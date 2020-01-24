@@ -38,6 +38,11 @@ ceserver
 ```
 In the above state, move to the ceserver folder and execute the `make` command.
 
+Alternatively, execute the following command:
+
+```
+gcc api.c ceserver.c ceservertest.c context.c extensionfunctions.c extensionloader.c native-api.c porthelp.c symbols.c threads.c -w -std=gnu++11 -D_LARGEFILE64_SOURCE -lz -ldl -pthread
+```
 
 #### Android
 ・AndroidNDK(ndk-build)
